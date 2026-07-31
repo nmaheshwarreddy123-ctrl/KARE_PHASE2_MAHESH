@@ -134,3 +134,82 @@ class Main
         
     }    
 }
+
+
+import java.util.*;
+class Main
+{
+    public static void main (String[] args){
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int row,col;
+        for(row=0;row<n;row++,System.out.println())
+        {
+            for(col=0;col<n-row;col++)
+            {
+                System.out.print(n-col);
+            }
+        
+        }  
+    }    
+}
+
+import java.util.*;
+class Main
+{
+    public static void main (String[] args){
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int row,col;
+        for(row=0;row<n;row++,System.out.println())
+        {
+            for(col=0;col<n-row;col++)
+            {
+                System.out.print(col+1);
+            }
+        
+        }  
+    }    
+}
+
+import java.util.*;
+class Main
+{
+    public static void main (String[] args){
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int row,col;
+        for(row=0;row<n;row++,System.out.println())
+        {
+            for(col=0;col<n-row;col++)
+            {
+                System.out.print(row+1);
+            }
+        
+        }  
+    }    
+}
+
+
+import java.util.*;
+class Main
+{
+    public static void main (String[] args){
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int row,col,c;
+        for(row=0;row<n;row++,System.out.println())
+        {
+            if(row%2==0)
+            c=1;
+            else
+            c=2;
+            for(col=0;col<=row;col++)
+            {
+                System.out.print(c+" ");
+                c+=2;
+            }
+        
+        }  
+    }    
+}
