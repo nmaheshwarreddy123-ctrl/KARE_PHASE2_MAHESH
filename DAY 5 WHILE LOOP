@@ -111,5 +111,26 @@ class Main {
         }
     }
 }
+//harshad number
 
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int temp=n;
+        int d;
+        int sum=0;
+        while(n!=0)
+        {
+            d=n%10;
+            sum=sum+d;
+            n=n/10;
+        }
+        if(temp%sum==0)
+        System.out.print("HARSHAD NUMBER");
+        else
+        System.out.print("NOT A HARSHAD NUMBER");
+    }
+}
 
