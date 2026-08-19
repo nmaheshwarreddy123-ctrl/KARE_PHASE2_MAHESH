@@ -1,0 +1,743 @@
+//CIRCULAR SINGLY LINKED LIST
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        System.out.println("Sum = " + m.sum());
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+        } else {
+            Node temp = first;
+
+            while (temp.next != first) {
+                temp = temp.next;
+            }
+
+            temp.next = n;
+            n.next = first;
+        }
+    }
+
+    int sum() {
+        if (first == null) {
+            return 0;
+        }
+
+        int sum = 0;
+        Node temp = first;
+
+        do {
+            sum = sum + temp.data;
+            temp = temp.next;
+        } while (temp != first);
+
+        return sum;
+    }
+}
+//SORT ELEMENTS
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.sort();
+        m.display();
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+        } else {
+            Node temp = first;
+
+            while (temp.next != first) {
+                temp = temp.next;
+            }
+
+            temp.next = n;
+            n.next = first;
+        }
+    }
+
+    void sort() {
+        if (first == null || first.next == first) {
+            return;
+        }
+
+        Node i = first;
+
+        do {
+            Node j = i.next;
+
+            while (j != first) {
+                if (i.data > j.data) {
+                    int temp = i.data;
+                    i.data = j.data;
+                    j.data = temp;
+                }
+
+                j = j.next;
+            }
+
+            i = i.next;
+
+        } while (i.next != first);
+    }
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
+
+//MAXIMUM ELEMENT
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        System.out.println("Maximum = " + m.maximum());
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+        } else {
+            Node temp = first;
+
+            while (temp.next != first) {
+                temp = temp.next;
+            }
+
+            temp.next = n;
+            n.next = first;
+        }
+    }
+
+    int maximum() {
+        if (first == null) {
+            return 0;
+        }
+
+        int max = first.data;
+        Node temp = first.next;
+
+        while (temp != first) {
+            if (temp.data > max) {
+                max = temp.data;
+            }
+
+            temp = temp.next;
+        }
+
+        return max;
+    }
+}
+
+//INSERTION ELEMENT
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.display();
+    }
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+        } 
+        else {
+            Node temp = first;
+
+            while (temp.next != first) {
+                temp = temp.next;
+            }
+
+            temp.next = n;
+            n.next = first;
+        }
+    }
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
+// REVERSE ELEMENT
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.reverse();
+        m.display();
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+        } else {
+            Node temp = first;
+
+            while (temp.next != first) {
+                temp = temp.next;
+            }
+
+            temp.next = n;
+            n.next = first;
+        }
+    }
+    void reverse() {
+        if (first == null || first.next == first) {
+            return;
+        }
+
+        Node prev = null;
+        Node current = first;
+        Node next;
+
+        do {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        } while (current != first);
+
+        first.next = prev;
+        first = prev;
+    }
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
+// DOUBLY CIRCULAR LINKED LIST
+import java.util.*;
+
+class Node {
+    int data;
+    Node next, prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.display();
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+            n.prev = first;
+        } else {
+            Node last = first.prev;
+
+            n.next = first;
+            n.prev = last;
+
+            last.next = n;
+            first.prev = n;
+        }
+    }
+
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
+//SUM OF ELEMENTS DOUBLY LINKED LIST
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        System.out.println("Sum = " + m.sum());
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+            n.prev = first;
+        } else {
+            Node last = first.prev;
+
+            n.next = first;
+            n.prev = last;
+
+            last.next = n;
+            first.prev = n;
+        }
+    }
+
+    int sum() {
+        if (first == null) {
+            return 0;
+        }
+
+        int sum = 0;
+        Node temp = first;
+
+        do {
+            sum = sum + temp.data;
+            temp = temp.next;
+        } while (temp != first);
+
+        return sum;
+    }
+}
+
+//SORT OF ELEMENTS
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.sort();
+        m.display();
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+            n.prev = first;
+        } else {
+            Node last = first.prev;
+
+            n.next = first;
+            n.prev = last;
+
+            last.next = n;
+            first.prev = n;
+        }
+    }
+
+    void sort() {
+        if (first == null || first.next == first) {
+            return;
+        }
+
+        Node i = first;
+
+        do {
+            Node j = i.next;
+
+            while (j != first) {
+                if (i.data > j.data) {
+
+                    int temp = i.data;
+                    i.data = j.data;
+                    j.data = temp;
+                }
+
+                j = j.next;
+            }
+
+            i = i.next;
+
+        } while (i != first);
+    }
+
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
+//MAXIMUM ELEMENT
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        System.out.println("Maximum = " + m.maximum());
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            n.next = first;
+            n.prev = first;
+        } else {
+            Node last = first.prev;
+
+            n.next = first;
+            n.prev = last;
+
+            last.next = n;
+            first.prev = n;
+        }
+    }
+
+    int maximum() {
+        if (first == null) {
+            return 0;
+        }
+
+        int max = first.data;
+        Node temp = first.next;
+
+        while (temp != first) {
+            if (temp.data > max) {
+                max = temp.data;
+            }
+
+            temp = temp.next;
+        }
+
+        return max;
+    }
+}
+//RERVERSE ELEMENTS
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class Main {
+    Node first = null;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = sc.nextInt();
+
+        while (d != -1) {
+            m.insert(d);
+            d = sc.nextInt();
+        }
+
+        m.reverse();
+        m.display();
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+
+        if (first == null) {
+            first = n;
+            first.next = first;
+            first.prev = first;
+        } else {
+            Node last = first.prev;
+
+            n.next = first;
+            n.prev = last;
+
+            last.next = n;
+            first.prev = n;
+        }
+    }
+
+    void reverse() {
+        if (first == null || first.next == first) {
+            return;
+        }
+
+        Node current = first;
+
+        do {
+            Node temp = current.next;
+
+            current.next = current.prev;
+            current.prev = temp;
+
+            current = temp;
+
+        } while (current != first);
+
+        first = first.next;
+    }
+
+    void display() {
+        if (first == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != first);
+    }
+}
