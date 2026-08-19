@@ -1,4 +1,4 @@
-//CIRCULAR SINGLY LINKED LIST
+// 1.CIRCULAR SINGLY LINKED LIST
 import java.util.*;
 
 class Node {
@@ -63,7 +63,7 @@ class Main {
         return sum;
     }
 }
-//SORT ELEMENTS
+//2.SORT ELEMENTS
 import java.util.*;
 
 class Node {
@@ -152,7 +152,7 @@ class Main {
     }
 }
 
-//MAXIMUM ELEMENT
+//3.MAXIMUM ELEMENT
 import java.util.*;
 
 class Node {
@@ -221,7 +221,7 @@ class Main {
     }
 }
 
-//INSERTION ELEMENT
+// 4.INSERTION ELEMENT
 import java.util.*;
 
 class Node {
@@ -283,7 +283,7 @@ class Main {
         } while (temp != first);
     }
 }
-// REVERSE ELEMENT
+// 5. REVERSE ELEMENT
 
 import java.util.*;
 
@@ -366,7 +366,7 @@ class Main {
         } while (temp != first);
     }
 }
-// DOUBLY CIRCULAR LINKED LIST
+// 6.DOUBLY CIRCULAR LINKED LIST
 import java.util.*;
 
 class Node {
@@ -429,7 +429,7 @@ class Main {
         } while (temp != first);
     }
 }
-//SUM OF ELEMENTS DOUBLY LINKED LIST
+// 7.SUM OF ELEMENTS DOUBLY LINKED LIST
 import java.util.*;
 
 class Node {
@@ -496,7 +496,7 @@ class Main {
     }
 }
 
-//SORT OF ELEMENTS
+// 8.SORT OF ELEMENTS
 import java.util.*;
 
 class Node {
@@ -587,7 +587,7 @@ class Main {
         } while (temp != first);
     }
 }
-//MAXIMUM ELEMENT
+//9.MAXIMUM ELEMENT
 import java.util.*;
 
 class Node {
@@ -656,7 +656,7 @@ class Main {
         return max;
     }
 }
-//RERVERSE ELEMENTS
+// 10.RERVERSE ELEMENTS
 import java.util.*;
 
 class Node {
