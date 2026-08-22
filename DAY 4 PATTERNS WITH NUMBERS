@@ -1,4 +1,4 @@
-// INCREASING NUMBER PATTERN 
+// 1 INCREASING NUMBER PATTERN 
 import java.util.*;
 
 class Main {
@@ -30,7 +30,7 @@ class Main {
     }
 }
 
-//CONTINUOUS NUMBERS
+// 2 CONTINUOUS NUMBERS
 import java.util.*;
 
 class Main {
@@ -48,7 +48,7 @@ class Main {
     }
 }
 
-//REVERSE NUMBER
+//3 REVERSE NUMBER
 import java.util.*;
 
 class Main {
@@ -64,7 +64,7 @@ class Main {
     }
 }
 
-//BUTTERFLY NUMBERS
+//4BUTTERFLY NUMBERS
 import java.util.*;
 
 class Main {
@@ -113,7 +113,7 @@ class Main {
     }
 }
 
-// M PATTERN
+//5 M PATTERN
 import java.util.*;
 
 class Main {
@@ -135,7 +135,7 @@ class Main {
     }
 }
 
-//N PATTERN
+//6 N PATTERN
 import java.util.*;
 
 class Main {
@@ -153,4 +153,180 @@ class Main {
             System.out.println();
         }
     }
+}
+*/7
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter n value:");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<n-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    } 
+}
+Enter n value:5
+*    *
+**   **
+***  ***
+**** ****
+**********
+//program to print  combination of base - 2 and base - 3 pattern.
+// 1. base - 2
+// 2. base - 3
+// 3. base - 3
+// 4. base - 2.
+//i/p          o/p
+/*5             
+               *        *
+               **      **
+               ***    ***
+               ****  ****
+               **********
+*/8import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter n value:");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<n-i+1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i+1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    } 
+}
+Enter n value:5
+*        *
+**      **
+***    ***
+****  ****
+**********
+//program to print  combination of base - 2 and base - 3 pattern.
+// 1. base - 2
+// Add another loop for rows
+// 2. base - 3
+//i/p          o/p
+/*5             
+               *
+               **
+               ***
+               **** The first loop for rows ends here.
+               *****
+               ****
+               ***
+               **
+               *
+*/9
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter n value:");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+            //System.out.println();
+    } 
+}
+Enter n value:5
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+//program to print  combination of base - 2 and base - 3 pattern.
+// 1. base - 2, 3, 3, 2.
+// Add another loop for rows
+// 2. base - 3, 2, 2, 3.
+//i/p          o/p
+/*5             
+               *        *
+               **      **
+               ***    ***
+               ****  ****
+               **********
+               ****  ****
+               ***    ***
+               **      **
+               *        *
+*/10
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter n value:");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        
+    } 
 }
