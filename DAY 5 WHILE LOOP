@@ -1,4 +1,4 @@
-// to count no of digitsw in given number
+// 1to count no of digitsw in given number
 import java.util.*;
 class Main{
     public static void main(String[]args){
@@ -15,7 +15,7 @@ class Main{
 }
 
 
-// to reverse a number rightside combination
+//2 to reverse a number rightside combination
 import java.util.*;
 class Main{
     public static void main(String[]args){
@@ -32,7 +32,7 @@ class Main{
     }
 }
 
-// to reverse a number without rightside combination
+// 3 to reverse a number without rightside combination
 import java.util.*;
 class Main{
     public static void main(String[]args){
@@ -48,7 +48,7 @@ class Main{
         
     }
 }
-//to found even digits and odd digits in the gtiven number 
+//4to found even digits and odd digits in the gtiven number 
 import java.util.*;
 class Main{
     public static void main(String[]args){
@@ -69,7 +69,7 @@ class Main{
         
     }
 }
-//to count prime digits in the given number
+//5to count prime digits in the given number
 import java.util.*;
 class Main{
     public static void main(String[]args){
@@ -87,7 +87,7 @@ class Main{
         
     }
 }
-// to check whether the number is palindrome or not palindrome
+//6 to check whether the number is palindrome or not palindrome
 import java.util.*;
 
 class Main {
@@ -111,7 +111,7 @@ class Main {
         }
     }
 }
-//harshad number
+//7harshad number
 
 import java.util.*;
 class Main{
@@ -133,4 +133,85 @@ class Main{
         System.out.print("NOT A HARSHAD NUMBER");
     }
 }
-
+//8import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter n value: ");
+        int n=sc.nextInt();
+        for(int i=0;i<n-1;i++){
+            //spaces
+            for(int j=0;j<=i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+Enter n value: 5
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+//9import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if((i+j)%2==0){
+                    System.out.print("0");
+                }
+                else{
+                    System.out.print("1");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+5
+01010
+10101
+01010
+10101
+01010
+//10
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+      System.out.print("Enter n value: ");
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(j==0 || i==0 || i==n-1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+    }
+}
