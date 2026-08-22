@@ -1,4 +1,4 @@
-//SWITCH CASE
+// 1 SWITCH CASE
 import java.util.*;
 class Main
 {
@@ -20,7 +20,7 @@ class Main
                 System.out.println("Invalid input");
         }
 
-//to print n natural numbers 
+// 2 to print n natural numbers 
 import java.util.*;
 class Main
 {
@@ -33,7 +33,7 @@ class Main
     }
 }
 
-// when taking inputs from user 
+// 3 when taking inputs from user 
 import java.util.*;
 class Main
 {
@@ -49,7 +49,7 @@ class Main
     }    
 }
 
-//factors of a given number
+// 4 factors of a given number
 import java.util.*;
 class Main
 {
@@ -68,7 +68,7 @@ class Main
     }    
 }
 
-//to print factorial
+// 5 to print factorial
 import java.util.*;
 class Main
 {
@@ -90,7 +90,7 @@ class Main
         
     }    
 }
-//to print tables
+// 6 to print tables
 import java.util.*;
 class Main
 {
@@ -107,3 +107,4 @@ class Main
         
         
     }    
+/
