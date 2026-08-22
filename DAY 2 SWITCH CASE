@@ -108,3 +108,77 @@ class Main
         
     }    
 /
+/ 7*write a java program to check greatest of three numbers*/
+import java.util.Scanner;
+class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number  :");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		if(a>b && a>c) {
+			System.out.println(a+"is a ,that is  greater.");
+		} else if(b>a && b>c) {
+			System.out.println(b+"is  b ,that is  greater.");
+		}else{
+		    System.out.println(c+" is c ,that is greater.");
+		}
+		sc.close();
+	}
+}
+
+/8*write a java program to check smallest of three numbers*/
+import java.util.Scanner;
+class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number  :");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		if(a<b && a<c) {
+			System.out.println(a+"is a ,that is  smaller.");
+		} else if(b<a && b<c) {
+			System.out.println(b+"is  b ,that is  smaller.");
+		}else{
+		    System.out.println(c+" is c ,that is smaller.");
+		}
+		sc.close();
+	}
+}
+
+//9to check whether number is leap year or not 
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a year : ");
+        int year = sc.nextInt();
+        if(year%400==0 || (year%100!=0 &&year%4==0)){
+            System.out.println(year +" is a Leap year");
+        }
+        else{
+            System.out.println(year+ "is Not a lear year");
+        }
+    }
+}
+//10to check given time is existed in railway time
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter hour : ");
+        int HH = sc.nextInt();
+        System.out.print("Enter minutes");
+        int MN = sc.nextInt();
+        System.out.print("Enter Seconds");
+         int SC = sc.nextInt();
+        if(HH>=0&&HH<=23 && MN>=00&&MN<=59 && SC>=00&&MN<=59){
+            System.out.println("VALID TIMING");
+        }
+        else{
+            System.out.println("INVALID TMING");
+        }
+    }
+}
