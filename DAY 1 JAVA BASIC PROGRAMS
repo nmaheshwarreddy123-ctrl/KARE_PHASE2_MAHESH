@@ -1,4 +1,4 @@
-//TO PRINT EVEN OR ODD NUMBER
+//1 TO PRINT EVEN OR ODD NUMBER
 import java.util.*;
 class Main{
 	public static void main(String[] args) {
@@ -26,7 +26,7 @@ class Main{
 	}
 }
 
-// TO CHECK VOTER ELIGIBLE FOR VOTE OR NOT
+// 2 TO CHECK VOTER ELIGIBLE FOR VOTE OR NOT
 import java.util.*;
 class Main{
 	public static void main(String[] args) {
@@ -52,7 +52,7 @@ class Main{
 	}
 }
 
-//TO CHECK GREATEST NUMBER WHEN 2 NUMBERS TAKEN
+// 3 TO CHECK GREATEST NUMBER WHEN 2 NUMBERS TAKEN
 import java.util.*;
 class Main{
 	public static void main(String[] args) {
@@ -66,7 +66,7 @@ class Main{
 	}
 }
 
-//SMALLEST NUMBER WHEN 3 INPUTS TAKEN
+// 4 SMALLEST NUMBER WHEN 3 INPUTS TAKEN
 import java.util.*;
 class Main{
 	public static void main(String[] args) {
@@ -83,7 +83,7 @@ class Main{
 	}
 }
 
-//to print message if is divisible with 2 numbers 
+// 5 to print message if is divisible with 2 numbers 
 import java.util.*;
 class Main{
 	public static void main(String[] args) {
@@ -112,7 +112,7 @@ class Main{
 	}
 }
 
-//SWITCH CASE
+// 6 SWITCH CASE
 import java.util.*;
 class Main
 {
@@ -134,7 +134,7 @@ class Main
                 System.out.println("Invalid input");
         }
 
-//to print n natural numbers 
+// 7 to print n natural numbers 
 import java.util.*;
 class Main
 {
@@ -147,7 +147,7 @@ class Main
     }
 }
 
-// when taking inputs from user 
+// 8 when taking inputs from user 
 import java.util.*;
 class Main
 {
@@ -163,7 +163,7 @@ class Main
     }    
 }
 
-//factors of a given number
+// 9 factors of a given number
 import java.util.*;
 class Main
 {
@@ -182,7 +182,7 @@ class Main
     }    
 }
 
-//to print factorial
+// 10 to print factorial
 import java.util.*;
 class Main
 {
@@ -204,23 +204,7 @@ class Main
         
     }    
 }
-//to print tables
-import java.util.*;
-class Main
-{
-    public static void main (String[] args){
-        Scanner obj = new Scanner(System.in);
-        
-        int n = obj.nextInt();
-        int t = obj.nextInt();
-        int i;
-        
-        for(i=1;i<=n;i++)
-        System.out.printf("%d * %d = %d\n",i,t,i*t); 
-        
-        
-        
-    }    
+
 
 
 
